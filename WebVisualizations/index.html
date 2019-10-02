@@ -29,100 +29,97 @@
 </head>
 
 
+<!-- Creates the Overall Grid -->
+<div class="container">
+
   <!-- Creates the Overall Grid -->
-  <div class="container">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Latitide Impacts</a>
 
-      <!-- Creates the Overall Grid -->
-      <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html">Latitide Impacts</a>
-
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <img id="drop_img" width="50" height="50" src="./visualizations/dropdown.png" alt="Drop_img">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <img id="drop_img" width="50" height="50" src="./visualizations/dropdown.png" alt="Drop_img">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Plots
-                      </a>
 
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                          <a class="dropdown-item" href="humidity.html">Humidity</a>
-                          <a class="dropdown-item" href="temperature.html">Temperature</a>
-                          <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                      </div>
-                  </li>
-
-                  <li>
-                      <a href="comparisons.html">Comparisons</a>
-                  </li>
-                  <li>
-                      <a href="cities_data.html">Data</a>
-                  </li>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="temperature.html">Temperature</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
           </div>
+        </li>
 
-
-
-
-
-          </ul>
-      </nav>
-
-    <!-- Row 1 -->
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Latitude Impacts on Weather</h1>
-      </div>
+        <li>
+          <a href="comparisons.html">Comparisons</a>
+        </li>
+        <li>
+          <a href="cities_data.html">Data</a>
+        </li>
     </div>
 
 
-    <!-- Row 2 -->
-    <div class="row">
-      <div class="col-md-8">
-        <h2>Project Summary: Latitude Impacts on City Weather </h2>
-
-        <section id="figure">
-          <img id="latitude" width="200" height="200" src="./visualizations/latitude.png" alt="Latitude">
-        </section>
-
-        <p>The intent of the project was to analyze the impact of different latitudes on various aspects of weather.
-          For analysis, data was pulled from OpenWeatherMap API to compile a dataset of over 500 cities.</p>
-        </br>
-        <p> Once the dataset was complied, Matplotlib was used to plot various aspects of weather compared with city
-          latitude.
-          Temperature, Cloudiness, Wind Speed, and Humidity were the weather aspects included in the analysis against
-          latitude.
-          Included in this site are visualizations, original source data, and explanations/descriptions of trends and
-          correlations seen.</p>
-        <p>Jupyter notebook and pandas was used to convert the csv to a dataframe and then into an html file which could
-          be moved to the proper folder
-          and then linked to the rest of the webpages.</p>
-        </br>
-
-      </div>
-      <div class="col-md-4">
-        <h3> Visualizations</h3>
-        <a href="cloudiness.html">
-          <img src="./visualizations/WeatherPy_Lat_Cloudiness.png" alt="Cloudiness" class="thumbs">
-        </a>
-        <a href="humidity.html">
-          <img src="./visualizations/WeatherPy_Lat_Humidity.png" alt="Humidity" class="thumbs">
-        </a>
-        <a href="temperature.html">
-          <img src="./visualizations/WeatherPy_Lat_Temp.png" alt="Temperature" class="thumbs">
-        </a>
-        <a href="wind.html">
-          <img src="./visualizations/WeatherPy_Lat_Wind.png" alt="Wind" class="thumbs">
-        </a>
-      </div>
 
 
 
+    </ul>
+  </nav>
+
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Latitude Impacts on Weather</h1>
+    </div>
+  </div>
+
+
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Project Summary: Latitude Impacts on City Weather </h2>
+
+      <section id="figure">
+        <img id="latitude" width="200" height="200" src="./visualizations/latitude.png" alt="Latitude">
+      </section>
+
+      <p>The intent of the project was to analyze the impact of different latitudes on various aspects of weather.
+        For analysis, data was pulled from OpenWeatherMap API to compile a dataset of over 500 cities.</p>
+      </br>
+      <p> Once the dataset was complied, Matplotlib was used to plot various aspects of weather compared with city
+        latitude.
+        Temperature, Cloudiness, Wind Speed, and Humidity were the weather aspects included in the analysis against
+        latitude.
+        Included in this site are visualizations, original source data, and explanations/descriptions of trends and
+        correlations seen.</p>
+      <p>Jupyter notebook and pandas were used to convert the csv to a dataframe and then into an html file. The new
+        html file could then
+        be moved to the proper folder and then linked to the rest of the webpages.</p>
+      </br>
+
+    </div>
+    <div class="col-md-4">
+      <h3> Visualizations</h3>
+      <a href="cloudiness.html">
+        <img src="./visualizations/WeatherPy_Lat_Cloudiness.png" alt="Cloudiness" class="thumbs">
+      </a>
+      <a href="humidity.html">
+        <img src="./visualizations/WeatherPy_Lat_Humidity.png" alt="Humidity" class="thumbs">
+      </a>
+      <a href="temperature.html">
+        <img src="./visualizations/WeatherPy_Lat_Temp.png" alt="Temperature" class="thumbs">
+      </a>
+      <a href="wind.html">
+        <img src="./visualizations/WeatherPy_Lat_Wind.png" alt="Wind" class="thumbs">
+      </a>
+    </div>
 
 
 
@@ -131,6 +128,9 @@
 
 
 
-</body>
+
+
+
+    </body>
 
 </html>

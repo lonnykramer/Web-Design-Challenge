@@ -69,6 +69,17 @@ h3 {
 }
 
 
+.compare_charts2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 500px;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
 /* Giving our navbar some padding and a background color */
 .navbar {
     padding: 10px;
@@ -87,6 +98,11 @@ h3 {
     border-radius: 3px;
   }
   
+  .nav-item dropdown {
+    margin-right: 10px;
+
+
+  }
   
 
 
@@ -109,3 +125,12 @@ h3 {
   margin: -100px 0 0 -150px;
   background: rgb(236, 240, 204);
   }
+
+
+  .navbar-brand {
+    background: white;
+    font-weight: 500;
+    font: black;
+  }
+
+  

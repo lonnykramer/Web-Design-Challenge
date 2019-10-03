@@ -12,7 +12,7 @@ body {
 
 /* h1 heading tag */
 h1 {
-    /* Put a 15-pixel margin at the bottom of the heading. */
+    /* Put a 20-pixel margin at the bottom of the heading. */
     margin-bottom: 20px;
     /* Change the size of your font to 60 pixels high. */
     font-size: 60px;
@@ -135,5 +135,9 @@ h3 {
 
   @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
-    }
+      background-color: lightblue;}
+    .navbar {
+      background-color: purple;}
+    
+  }
+
